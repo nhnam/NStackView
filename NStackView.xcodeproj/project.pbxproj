@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F9E78D1C8DC781964C99C75 /* libPods-NStackView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C009B797031935B451B523C /* libPods-NStackView.a */; };
+		93F31FCE6C245D17D9E03000 /* Pods_NStackView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D014B65F05AFB47E97B04344 /* Pods_NStackView.framework */; };
 		D80FEA551BF0B2B100F2EF3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80FEA541BF0B2B100F2EF3E /* AppDelegate.swift */; };
 		D80FEA571BF0B2B100F2EF3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80FEA561BF0B2B100F2EF3E /* ViewController.swift */; };
 		D80FEA5A1BF0B2B100F2EF3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80FEA581BF0B2B100F2EF3E /* Main.storyboard */; };
 		D80FEA5C1BF0B2B100F2EF3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D80FEA5B1BF0B2B100F2EF3E /* Assets.xcassets */; };
 		D80FEA5F1BF0B2B100F2EF3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80FEA5D1BF0B2B100F2EF3E /* LaunchScreen.storyboard */; };
+		D80FEA681BF0DE6200F2EF3E /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D80FEA671BF0DE6200F2EF3E /* SnapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C009B797031935B451B523C /* libPods-NStackView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NStackView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B4868E652FE18434C4E635 /* Pods-NStackView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NStackView.release.xcconfig"; path = "Pods/Target Support Files/Pods-NStackView/Pods-NStackView.release.xcconfig"; sourceTree = "<group>"; };
+		D014B65F05AFB47E97B04344 /* Pods_NStackView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NStackView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D80FEA511BF0B2B100F2EF3E /* NStackView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NStackView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D80FEA541BF0B2B100F2EF3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D80FEA561BF0B2B100F2EF3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +26,7 @@
 		D80FEA5B1BF0B2B100F2EF3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D80FEA5E1BF0B2B100F2EF3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D80FEA601BF0B2B100F2EF3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D80FEA671BF0DE6200F2EF3E /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "Pods/../build/Debug-iphoneos/SnapKit.framework"; sourceTree = "<group>"; };
 		E2298B1864DAF0A9492AC87D /* Pods-NStackView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NStackView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NStackView/Pods-NStackView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,7 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F9E78D1C8DC781964C99C75 /* libPods-NStackView.a in Frameworks */,
+				D80FEA681BF0DE6200F2EF3E /* SnapKit.framework in Frameworks */,
+				93F31FCE6C245D17D9E03000 /* Pods_NStackView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +86,8 @@
 		E4FCB56810E354919DD49220 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4C009B797031935B451B523C /* libPods-NStackView.a */,
+				D80FEA671BF0DE6200F2EF3E /* SnapKit.framework */,
+				D014B65F05AFB47E97B04344 /* Pods_NStackView.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -325,8 +329,12 @@
 			baseConfigurationReference = E2298B1864DAF0A9492AC87D /* Pods-NStackView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = NStackView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twincorp.NStackView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -338,8 +346,12 @@
 			baseConfigurationReference = 98B4868E652FE18434C4E635 /* Pods-NStackView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = NStackView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twincorp.NStackView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
