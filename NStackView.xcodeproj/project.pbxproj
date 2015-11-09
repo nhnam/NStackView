@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F9E78D1C8DC781964C99C75 /* libPods-NStackView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C009B797031935B451B523C /* libPods-NStackView.a */; };
 		D80FEA551BF0B2B100F2EF3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80FEA541BF0B2B100F2EF3E /* AppDelegate.swift */; };
 		D80FEA571BF0B2B100F2EF3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80FEA561BF0B2B100F2EF3E /* ViewController.swift */; };
 		D80FEA5A1BF0B2B100F2EF3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80FEA581BF0B2B100F2EF3E /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C009B797031935B451B523C /* libPods-NStackView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NStackView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98B4868E652FE18434C4E635 /* Pods-NStackView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NStackView.release.xcconfig"; path = "Pods/Target Support Files/Pods-NStackView/Pods-NStackView.release.xcconfig"; sourceTree = "<group>"; };
 		D80FEA511BF0B2B100F2EF3E /* NStackView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NStackView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D80FEA541BF0B2B100F2EF3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D80FEA561BF0B2B100F2EF3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		D80FEA5B1BF0B2B100F2EF3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D80FEA5E1BF0B2B100F2EF3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D80FEA601BF0B2B100F2EF3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2298B1864DAF0A9492AC87D /* Pods-NStackView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NStackView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NStackView/Pods-NStackView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F9E78D1C8DC781964C99C75 /* libPods-NStackView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20F2CF0044486517EAA929A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2298B1864DAF0A9492AC87D /* Pods-NStackView.debug.xcconfig */,
+				98B4868E652FE18434C4E635 /* Pods-NStackView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D80FEA481BF0B2B100F2EF3E = {
 			isa = PBXGroup;
 			children = (
 				D80FEA531BF0B2B100F2EF3E /* NStackView */,
 				D80FEA521BF0B2B100F2EF3E /* Products */,
+				20F2CF0044486517EAA929A4 /* Pods */,
+				E4FCB56810E354919DD49220 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = NStackView;
 			sourceTree = "<group>";
 		};
+		E4FCB56810E354919DD49220 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C009B797031935B451B523C /* libPods-NStackView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D80FEA631BF0B2B100F2EF3E /* Build configuration list for PBXNativeTarget "NStackView" */;
 			buildPhases = (
+				340C2E1224E580C5604B5F6F /* Check Pods Manifest.lock */,
 				D80FEA4D1BF0B2B100F2EF3E /* Sources */,
 				D80FEA4E1BF0B2B100F2EF3E /* Frameworks */,
 				D80FEA4F1BF0B2B100F2EF3E /* Resources */,
+				57E300D4D962006613FF0055 /* Embed Pods Frameworks */,
+				CCF45BAC43C3AA861DAC51F0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		340C2E1224E580C5604B5F6F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		57E300D4D962006613FF0055 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NStackView/Pods-NStackView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCF45BAC43C3AA861DAC51F0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NStackView/Pods-NStackView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D80FEA4D1BF0B2B100F2EF3E /* Sources */ = {
@@ -247,9 +322,11 @@
 		};
 		D80FEA641BF0B2B100F2EF3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2298B1864DAF0A9492AC87D /* Pods-NStackView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NStackView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twincorp.NStackView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -258,9 +335,11 @@
 		};
 		D80FEA651BF0B2B100F2EF3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98B4868E652FE18434C4E635 /* Pods-NStackView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NStackView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twincorp.NStackView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,6 +365,7 @@
 				D80FEA651BF0B2B100F2EF3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
